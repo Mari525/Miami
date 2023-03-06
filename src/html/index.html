@@ -7,10 +7,10 @@
   <title>Miami Condo Kings</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
-<body>
-  <header class="header">
+<body id="body">
+  <header class="header" id="home">
     <div class="header__wrapper">
-      <button class="header__btn">
+      <button class="header__btn" id="open-btn">
         <svg width="24" height="24"><use xlink:href="./img/icons.svg#open-btn"></use></svg>
       </button>
       <a href="#">
@@ -19,38 +19,41 @@
       <a class="header__phone" href="tel:+12345555555">
         <svg width="24" height="24"><use xlink:href="./img/icons.svg#phone"></use></svg>
       </a>
-    <!-- </div> -->
     <h1 class="header__heading">Miami <br> Condo Kings</h1>
     </div>
-    <!-- <div class="burger visually-hidden">
-      <button class="burger__close-btn">
-        <svg><use xlink:href="./img/icons.svg#close-btn"></use></svg>
-      </button>
-      <a href="#">
-        <svg><use xlink:href="./img/icons.svg#logo"></use></svg>
-      </a>
-      <nav class="burger__nav">
-        <ul class="burger__list">
-          <li class="burger__item">
-            <a href="#" class="burger__link">Home</a>
-          </li>
-          <li class="burger__item">
-            <a href="#about" class="burger__link">About us</a>
-          </li>
-          <li class="burger__item">
-            <a href="#gallery" class="burger__link">Gallery</a>
-          </li>
-          <li class="burger__item">
-            <a href="#testimonials" class="burger__link">Testimonials</a>
-          </li>
-          <li class="burger__item">
-            <a href="#contact" class="burger__link">contact</a>
-          </li>
-        </ul>
-      </nav>
-      <p class="burger__phone">+1 234 555-55-55</p>
-      <a href="tel:+12345555555" class="burger__phone-link">Call to order</a>
-    </div> -->
+    <div class="burger" id="burger">
+      <div class="burger__wrapper">
+        <div class="burger__wrapper-btn">
+          <button class="burger__close-btn" id="close-btn">
+            <svg width="24" height="24"><use xlink:href="./img/icons.svg#close-btn"></use></svg>
+          </button>
+          <a href="#" class="burger__logo">
+            <svg width="82" height="48"><use xlink:href="./img/icons.svg#logo"></use></svg>
+          </a>
+        </div>
+        <nav class="burger__nav">
+          <ul class="burger__list">
+            <li class="burger__item">
+              <a href="#home" class="burger__link">Home</a>
+            </li>
+            <li class="burger__item">
+              <a href="#about" class="burger__link">About us</a>
+            </li>
+            <li class="burger__item">
+              <a href="#gallery" class="burger__link">Gallery</a>
+            </li>
+            <li class="burger__item">
+              <a href="#test" class="burger__link">Testimonials</a>
+            </li>
+            <li class="burger__item">
+              <a href="#contact" class="burger__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="burger__phone">+1 234 555-55-55</p>
+        <a href="tel:+12345555555" class="burger__phone-link">Call to order</a>
+      </div>
+    </div>
   </header>
 
   <main class="main">
@@ -79,73 +82,135 @@
       </p>
     </section>
 
-    <section class="gallery-small">
-      <h2 class="heading">Gallery</h2>
-      <ul class="gallery-small__list">
-        <li class="gallery-small__item">
-          <img src="./img/gallery-small/small-1.jpg" alt="" class="gallery-small__photo">
-          <img src="./img/gallery-small/small-2.jpg" alt="" class="gallery-small__photo">
-          <p class="gallery-small__text">
-            <b class="gallery-small__text-accent">Marina Palms </b>
-            / North Miami Beach, FL 33162
-          </p>
-        </li>
-        <li class="gallery-small__item">
-          <img src="./img/gallery-small/small-3.jpg" alt="" class="gallery-small__photo">
-          <img src="./img/gallery-small/small-4.jpg" alt="" class="gallery-small__photo">
-          <p class="gallery-small__text">
-            <b class="gallery-small__text-accent">Edition Residens </b>
-            / Miami Beach, FL 33139
-          </p>
-        </li>
-        <li class="gallery-small__item">
-          <img src="./img/gallery-small/small-5.jpg" alt="" class="gallery-small__photo">
-          <img src="./img/gallery-small/small-6.jpg" alt="" class="gallery-small__photo">
-          <p class="gallery-small__text">
-            <b class="gallery-small__text-accent">Faena House </b>
-            / Miami Beach, FL 33140
-          </p>
-        </li>
-      </ul>
-      <button class="gallery-small__view-all">
-        View all
-      </button>
-    </section>
+    <div id="gallery">
+      <section class="gallery-small">
+        <h2 class="heading">Gallery</h2>
+        <ul class="gallery-small__list">
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-1.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-2.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Marina Palms </b>
+              / North Miami Beach, FL 33162
+            </p>
+          </li>
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-3.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-4.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Edition Residens </b>
+              / Miami Beach, FL 33139
+            </p>
+          </li>
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-5.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-6.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Faena House </b>
+              / Miami Beach, FL 33140
+            </p>
+          </li>
+        </ul>
+        <button class="gallery-small__view-all gallery__view-all" id="gallery-btn-small">
+          View all
+        </button>
+      </section>
+  
+      <section class="gallery-big">
+        <h2 class="heading">Gallery</h2>
+        <ul class="gallery-big__list">
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-1.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-2.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Marina Palms </b>
+              / North Miami Beach, FL 33162
+            </p>
+          </li>
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-3.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-4.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Edition Residens </b>
+              / Miami Beach, FL 33139
+            </p>
+          </li>
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-5.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-6.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Faena House </b>
+              / Miami Beach, FL 33140
+            </p>
+          </li>
+        </ul>
+        <button class="gallery-big__view-all gallery__view-all" id="gallery-btn-big">
+          View all
+        </button>
+      </section>
+    </div>
 
-    <section class="gallery-big">
-      <h2 class="heading">Gallery</h2>
-      <ul class="gallery-big__list">
-        <li class="gallery-big__item">
-          <img src="./img/gallery-big/big-1.jpg" alt="" class="gallery-big__photo">
-          <img src="./img/gallery-big/big-2.jpg" alt="" class="gallery-big__photo">
-          <p class="gallery-big__text">
-            <b class="gallery-big__text-accent">Marina Palms </b>
-            / North Miami Beach, FL 33162
-          </p>
-        </li>
-        <li class="gallery-big__item">
-          <img src="./img/gallery-big/big-3.jpg" alt="" class="gallery-big__photo">
-          <img src="./img/gallery-big/big-4.jpg" alt="" class="gallery-big__photo">
-          <p class="gallery-big__text">
-            <b class="gallery-big__text-accent">Edition Residens </b>
-            / Miami Beach, FL 33139
-          </p>
-        </li>
-        <li class="gallery-big__item">
-          <img src="./img/gallery-big/big-5.jpg" alt="" class="gallery-big__photo">
-          <img src="./img/gallery-big/big-6.jpg" alt="" class="gallery-big__photo">
-          <p class="gallery-big__text">
-            <b class="gallery-big__text-accent">Faena House </b>
-            / Miami Beach, FL 33140
-          </p>
-        </li>
-      </ul>
-      <button class="gallery-big__view-all">
-        View all
-      </button>
-    </section>
+    <div class="gallery-show">
+      <section class="gallery-small">
+        <ul class="gallery-small__list">
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-1.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-2.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Marina Palms </b>
+              / North Miami Beach, FL 33162
+            </p>
+          </li>
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-3.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-4.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Edition Residens </b>
+              / Miami Beach, FL 33139
+            </p>
+          </li>
+          <li class="gallery-small__item">
+            <img src="./img/gallery-small/small-5.jpg" alt="" class="gallery-small__photo">
+            <img src="./img/gallery-small/small-6.jpg" alt="" class="gallery-small__photo">
+            <p class="gallery-small__text">
+              <b class="gallery-small__text-accent">Faena House </b>
+              / Miami Beach, FL 33140
+            </p>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="gallery-big">
+        <ul class="gallery-big__list">
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-1.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-2.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Marina Palms </b>
+              / North Miami Beach, FL 33162
+            </p>
+          </li>
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-3.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-4.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Edition Residens </b>
+              / Miami Beach, FL 33139
+            </p>
+          </li>
+          <li class="gallery-big__item">
+            <img src="./img/gallery-big/big-5.jpg" alt="" class="gallery-big__photo">
+            <img src="./img/gallery-big/big-6.jpg" alt="" class="gallery-big__photo">
+            <p class="gallery-big__text">
+              <b class="gallery-big__text-accent">Faena House </b>
+              / Miami Beach, FL 33140
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
     
-    <section class="test">
+    <section class="test" id="test">
       <h2 class="heading">Testimonials</h2>
       <ul class="test__list">
         <li class="test__item">
@@ -176,7 +241,7 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="heading contact__heading">Contact us</h2>
       <div class="contact__wrapper">
         <div>
@@ -192,7 +257,7 @@
             Minneapolis, MN 55401
           </p>
         </div>
-        <form action="" class="contact__form">
+        <form action="" class="contact__form" id="form">
           <label class="visually-hidden" for="name">Name</label>
           <input type="text" class="contact__input" id="name" name="name" placeholder="Name">
           <label class="visually-hidden" for="email">Email</label>
