@@ -11,6 +11,13 @@
 
   background-color: #0075FF;
 
+  animation: ani 1s forwards;
+
+  @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
   &__wrapper {
     max-width: 1020px;
     margin: 0 auto;
@@ -24,6 +31,13 @@
   &__close-btn {
     border: none;
     background: none;
+
+  //   animation: ani 1s forwards;
+
+  //   @keyframes ani {
+  //     0% {transform: translateY(0);}
+  //     100% {transform: translate(-200%);}
+  // }
 
   }
 
